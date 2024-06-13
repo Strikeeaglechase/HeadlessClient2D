@@ -1,0 +1,23 @@
+{
+  "name": "headlessclient2d",
+  "version": "1.0.0",
+  "description": "2d top down visualization for Headless Client",
+  "main": "src/main.ts",
+  "scripts": {
+    "build": "tsc && rollup -c rollup.config.js",
+    "watch": "rollup -c rollup.config.js -w"
+  },
+  "author": "Strikeeaglechase",
+  "license": "ISC",
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "strik-2d-renderer": "^1.0.2",
+    "typescript": "^5.4.5",
+    "typescript-transform-paths": "^3.4.7"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.8",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@types/node": "^20.14.1"
+  }
+}

@@ -1,0 +1,32 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",
+		"strictPropertyInitialization": false,
+		"allowJs": true,
+		"moduleResolution": "node",
+		"experimentalDecorators": true,
+		"allowSyntheticDefaultImports": true,
+		"sourceMap": true,
+		"baseUrl": "src",
+		"outDir": "dist",
+		"rootDir": "src",
+		"paths": {
+			"@/*": ["src/*"],
+			"tslib": ["./node_modules/tslib/tslib.d.ts"],
+			"@common/*": ["../VTOLLiveViewerCommon/dist/*"],
+		},
+		"plugins": [
+			{ "transform": "typescript-transform-paths" },
+			{ "transform": "typescript-transform-paths",	"afterDeclarations": true }
+		],
+		"lib": ["DOM", "DOM.Iterable", "ESNext"],
+	},
+	"include": [
+		"src/**/*.ts",
+		"tests/**/*.ts",
+		"src/viewer/meshLoader/OBJLoader.js",
+		"src/viewer/meshLoader/GLTFLoader.js",
+	],
+	"exclude": ["node_modules"],
+}
